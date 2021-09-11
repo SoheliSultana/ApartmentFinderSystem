@@ -1,0 +1,220 @@
+package com.uwb.entity.address;
+
+import java.io.Serializable;
+
+import com.uwb.entity.apartment.*;
+
+/**
+ * The AddressData objects extends the generated Value object.
+ * Put here your presentation specific code.
+ *
+ * @author  Soheli Sultana  university of washington bothel
+ * @version $Revision: 1.8 $, $Date: 2005/07/08 17:09:50 $
+ */
+public class AddressData implements AddressIf, Serializable    {
+
+   /**
+    * Default constructor.
+    */
+   public AddressData() {
+   }
+
+   /**
+    * Value object constructor.
+    */
+   public AddressData(com.uwb.entity.address.AddressIf value) {
+      setId(value.getId());
+      setAddresscol(value.getAddresscol());
+      setCity(value.getCity());
+      setState(value.getState());
+      setZipcode(value.getZipcode());
+      setApartmentid(value.getApartmentid());
+   }
+
+
+   private java.lang.Integer id;
+
+   /**
+    * Returns the value of the <code>id</code> property.
+    *
+    * @return the value of the <code>id</code> property.
+    */
+   public java.lang.Integer getId() {
+      return id;
+   }
+
+   /**
+    * Sets the value of the <code>id</code> property.
+    *
+    * @param id a value for <code>id</code>.
+    */
+   public void setId(java.lang.Integer id) {
+      this.id = id;
+   }
+
+   private java.lang.String addresscol;
+
+   /**
+    * Returns the value of the <code>addresscol</code> property.
+    *
+    * @return the value of the <code>addresscol</code> property.
+    */
+   public java.lang.String getAddresscol() {
+      return addresscol;
+   }
+
+   /**
+    * Sets the value of the <code>addresscol</code> property.
+    *
+    * @param addresscol a value for <code>addresscol</code>.
+    */
+   public void setAddresscol(java.lang.String addresscol) {
+      this.addresscol = addresscol;
+   }
+
+   private java.lang.String city;
+
+   /**
+    * Returns the value of the <code>city</code> property.
+    *
+    * @return the value of the <code>city</code> property.
+    */
+   public java.lang.String getCity() {
+      return city;
+   }
+
+   /**
+    * Sets the value of the <code>city</code> property.
+    *
+    * @param city a value for <code>city</code>.
+    */
+   public void setCity(java.lang.String city) {
+      this.city = city;
+   }
+
+   private java.lang.String state;
+
+   /**
+    * Returns the value of the <code>state</code> property.
+    *
+    * @return the value of the <code>state</code> property.
+    */
+   public java.lang.String getState() {
+      return state;
+   }
+
+   /**
+    * Sets the value of the <code>state</code> property.
+    *
+    * @param state a value for <code>state</code>.
+    */
+   public void setState(java.lang.String state) {
+      this.state = state;
+   }
+
+   private java.lang.String zipcode;
+
+   /**
+    * Returns the value of the <code>zipcode</code> property.
+    *
+    * @return the value of the <code>zipcode</code> property.
+    */
+   public java.lang.String getZipcode() {
+      return zipcode;
+   }
+
+   /**
+    * Sets the value of the <code>zipcode</code> property.
+    *
+    * @param zipcode a value for <code>zipcode</code>.
+    */
+   public void setZipcode(java.lang.String zipcode) {
+      this.zipcode = zipcode;
+   }
+
+   private java.lang.Integer apartmentid;
+
+   /**
+    * Returns the value of the <code>apartmentid</code> property.
+    *
+    * @return the value of the <code>apartmentid</code> property.
+    */
+   public java.lang.Integer getApartmentid() {
+      return apartmentid;
+   }
+
+   /**
+    * Sets the value of the <code>apartmentid</code> property.
+    *
+    * @param apartmentid a value for <code>apartmentid</code>.
+    */
+   public void setApartmentid(java.lang.Integer apartmentid) {
+      this.apartmentid = apartmentid;
+   }
+
+
+    /**
+     * Return the primary key.
+     *
+     * @return java.lang.Integer with the primary key.
+     */
+    public java.lang.Integer getPrimaryKey() {
+        return getId();
+    }
+
+    /**
+     * Set the primary key.
+     *
+     * @param pk the primary key
+     */
+    public void setPrimaryKey(java.lang.Integer pk) {
+       setId(pk);
+    }
+
+
+   public String getPrimaryKeyParameters() {
+      String parameters = "";
+      parameters += "&id=" + getId();
+      return parameters;
+   }
+
+
+
+   /**
+    * property.
+    */
+   private ApartmentIf apartmentidApartment;
+
+   /**
+    * Returns the value of the <code>apartmentidApartment</code> relation property.
+    *
+    * @return the value of the <code>apartmentidApartment</code> relation property.
+    */
+   public ApartmentIf getApartmentidApartment() {
+      return apartmentidApartment;
+   }
+
+   /**
+    * Sets the value of the <code>apartmentidApartment</code> relation property.
+    *
+    * @param apartment a value for <code>apartmentidApartment</code>.
+    */
+   public void setApartmentidApartment(ApartmentIf apartment) {
+      this.apartmentidApartment = apartment;
+   }
+
+
+
+
+   public String toString() {
+	  StringBuffer str = new StringBuffer("{");
+	  str.append("id=" + getId()  + " ");
+	  str.append("addresscol=" + getAddresscol()  + " ");
+	  str.append("city=" + getCity()  + " ");
+	  str.append("state=" + getState()  + " ");
+	  str.append("zipcode=" + getZipcode()  + " ");
+	  str.append("apartmentid=" + getApartmentid()  + " ");
+	  str.append('}');
+	  return(str.toString());
+   }
+}

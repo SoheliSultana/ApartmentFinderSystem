@@ -1,0 +1,112 @@
+package com.uwb.entity.address;
+
+
+/**
+ * The AddressIf interfaces exposes the persistence data.
+ *
+ * @author  Soheli Sultana  university of washington bothel
+ * @version $Revision: 1.4 $, $Date: 2005/06/29 20:56:26 $
+ */
+public interface AddressIf {
+
+    /**
+     * Return the primary key.
+     *
+     * @return java.lang.Integer he primary key.
+     */
+    java.lang.Integer getPrimaryKey();
+
+    /**
+     * Set the primary key.
+     *
+     * @param pk return java.lang.Integer with the primary key.
+     */
+    void setPrimaryKey(java.lang.Integer pk);
+
+
+   /**
+    * Returns the value of the <code>id</code> property.
+    *
+    * @return the value of the <code>id</code> property
+    */
+   java.lang.Integer getId();
+
+   /**
+    * Sets the value of the <code>id</code> property.
+    *
+    * @param id the value for the <code>id</code> property
+    */
+   void setId(java.lang.Integer id);
+
+   /**
+    * Returns the value of the <code>addresscol</code> property.
+    *
+    * @return the value of the <code>addresscol</code> property
+    */
+   java.lang.String getAddresscol();
+
+   /**
+    * Sets the value of the <code>addresscol</code> property.
+    *
+    * @param addresscol the value for the <code>addresscol</code> property
+    */
+   void setAddresscol(java.lang.String addresscol);
+
+   /**
+    * Returns the value of the <code>city</code> property.
+    *
+    * @return the value of the <code>city</code> property
+    */
+   java.lang.String getCity();
+
+   /**
+    * Sets the value of the <code>city</code> property.
+    *
+    * @param city the value for the <code>city</code> property
+    */
+   void setCity(java.lang.String city);
+
+   /**
+    * Returns the value of the <code>state</code> property.
+    *
+    * @return the value of the <code>state</code> property
+    */
+   java.lang.String getState();
+
+   /**
+    * Sets the value of the <code>state</code> property.
+    *
+    * @param state the value for the <code>state</code> property
+    */
+   void setState(java.lang.String state);
+
+   /**
+    * Returns the value of the <code>zipcode</code> property.
+    *
+    * @return the value of the <code>zipcode</code> property
+    */
+   java.lang.String getZipcode();
+
+   /**
+    * Sets the value of the <code>zipcode</code> property.
+    *
+    * @param zipcode the value for the <code>zipcode</code> property
+    */
+   void setZipcode(java.lang.String zipcode);
+
+   /**
+    * Returns the value of the <code>apartmentid</code> property.
+    *
+    * @return the value of the <code>apartmentid</code> property
+    */
+   java.lang.Integer getApartmentid();
+
+   /**
+    * Sets the value of the <code>apartmentid</code> property.
+    *
+    * @param apartmentid the value for the <code>apartmentid</code> property
+    */
+   void setApartmentid(java.lang.Integer apartmentid);
+
+
+}

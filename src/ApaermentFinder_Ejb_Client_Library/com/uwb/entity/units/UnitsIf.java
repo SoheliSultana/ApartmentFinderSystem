@@ -1,0 +1,126 @@
+package com.uwb.entity.units;
+
+
+/**
+ * The UnitsIf interfaces exposes the persistence data.
+ *
+ * @author  Soheli Sultana  university of washington bothel
+ * @version $Revision: 1.4 $, $Date: 2005/06/29 20:56:26 $
+ */
+public interface UnitsIf {
+
+    /**
+     * Return the primary key.
+     *
+     * @return java.lang.Integer he primary key.
+     */
+    java.lang.Integer getPrimaryKey();
+
+    /**
+     * Set the primary key.
+     *
+     * @param pk return java.lang.Integer with the primary key.
+     */
+    void setPrimaryKey(java.lang.Integer pk);
+
+
+   /**
+    * Returns the value of the <code>id</code> property.
+    *
+    * @return the value of the <code>id</code> property
+    */
+   java.lang.Integer getId();
+
+   /**
+    * Sets the value of the <code>id</code> property.
+    *
+    * @param id the value for the <code>id</code> property
+    */
+   void setId(java.lang.Integer id);
+
+   /**
+    * Returns the value of the <code>number</code> property.
+    *
+    * @return the value of the <code>number</code> property
+    */
+   java.lang.String getNumber();
+
+   /**
+    * Sets the value of the <code>number</code> property.
+    *
+    * @param number the value for the <code>number</code> property
+    */
+   void setNumber(java.lang.String number);
+
+   /**
+    * Returns the value of the <code>squareft</code> property.
+    *
+    * @return the value of the <code>squareft</code> property
+    */
+   java.lang.String getSquareft();
+
+   /**
+    * Sets the value of the <code>squareft</code> property.
+    *
+    * @param squareft the value for the <code>squareft</code> property
+    */
+   void setSquareft(java.lang.String squareft);
+
+   /**
+    * Returns the value of the <code>type</code> property.
+    *
+    * @return the value of the <code>type</code> property
+    */
+   java.lang.String getType();
+
+   /**
+    * Sets the value of the <code>type</code> property.
+    *
+    * @param type the value for the <code>type</code> property
+    */
+   void setType(java.lang.String type);
+
+   /**
+    * Returns the value of the <code>rent</code> property.
+    *
+    * @return the value of the <code>rent</code> property
+    */
+   java.math.BigDecimal getRent();
+
+   /**
+    * Sets the value of the <code>rent</code> property.
+    *
+    * @param rent the value for the <code>rent</code> property
+    */
+   void setRent(java.math.BigDecimal rent);
+
+   /**
+    * Returns the value of the <code>avalibility</code> property.
+    *
+    * @return the value of the <code>avalibility</code> property
+    */
+   java.sql.Timestamp getAvalibility();
+
+   /**
+    * Sets the value of the <code>avalibility</code> property.
+    *
+    * @param avalibility the value for the <code>avalibility</code> property
+    */
+   void setAvalibility(java.sql.Timestamp avalibility);
+
+   /**
+    * Returns the value of the <code>apertmentid</code> property.
+    *
+    * @return the value of the <code>apertmentid</code> property
+    */
+   java.lang.Integer getApertmentid();
+
+   /**
+    * Sets the value of the <code>apertmentid</code> property.
+    *
+    * @param apertmentid the value for the <code>apertmentid</code> property
+    */
+   void setApertmentid(java.lang.Integer apertmentid);
+
+
+}
